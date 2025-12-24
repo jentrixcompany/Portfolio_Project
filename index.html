@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesse Kiplangat | Frontend Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- CSS in a "css" folder -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Jesse Kiplangat</a>
+
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with SPECTACULAR Animations -->
+    <section id="home" class="hero">
+        <!-- Animated Background -->
+        <div class="particles-container" id="particles"></div>
+        <div class="orb"></div>
+
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-subtitle">Frontend Developer</span>
+                <h1 class="hero-title">Crafting Digital <span>Experiences</span> That Inspire</h1>
+                <p class="hero-description">
+                    I'm Jesse Kiplangat, a passionate frontend developer dedicated to creating beautiful,
+                    responsive, and user-centric web interfaces. With a focus on clean code and modern design,
+                    I transform complex problems into elegant solutions.
+                </p>
+
+                <div class="hero-btns">
+                    <a href="#contact" class="btn">
+                        <i class="fas fa-paper-plane" style="margin-right: 10px;"></i>
+                        Start a Project
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <i class="fas fa-user" style="margin-right: 10px;"></i>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">About Me</span>
+                <h2 class="section-title">The Developer Behind the Code</h2>
+                <p class="section-description">
+                    Get to know the person who brings ideas to life through clean, efficient, and modern web development.
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm <strong>Jesse Kiplangat</strong>, a frontend web developer with comprehensive training from
+                        freeCodeCamp and Codecademy. My journey in web development began with a curiosity about how
+                        beautiful, functional websites are built, and it has evolved into a deep passion for creating
+                        digital experiences that users love.
+                    </p>
+                    <p>
+                        I specialize in transforming design concepts into fully responsive, interactive websites
+                        using modern technologies. My approach combines technical expertise with an eye for design,
+                        ensuring every project not only works flawlessly but also delivers an exceptional user experience.
+                    </p>
+                    <p>
+                        What drives me is the challenge of solving problems through code and design. Whether it's
+                        optimizing performance, ensuring accessibility, or implementing cutting-edge features, I'm
+                        committed to delivering solutions that exceed expectations.
+                    </p>
+
+                    <div class="about-highlight">
+                        <p>
+                            "Great web design is about more than just aesthetics—it's about creating experiences
+                            that are intuitive, accessible, and memorable for every user."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="image-gallery">
+                    <div class="gallery-item" data-index="1">
+                        <div class="gallery-image">
+                            <img src="pic1.jpeg" alt="Professional Headshot of Jesse Kiplangat">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-label">Professional Headshot</div>
+                            <div class="gallery-desc">Click to view larger</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-index="2">
+                        <div class="gallery-image">
+                            <img src="pic2.jpeg" alt="Casual Portrait of Jesse Kiplangat">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-label">Casual Portrait</div>
+                            <div class="gallery-desc">Click to view larger</div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-index="3">
+                        <div class="gallery-image">
+                            <img src="pic3.jpeg" alt="Creative Session with Jesse Kiplangat">
+                        </div>
+                        <div class="gallery-overlay">
+                            <div class="gallery-label">Creative Session</div>
+                            <div class="gallery-desc">Click to view larger</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="modal-overlay" id="imageModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="modal-nav prev" id="prevImage">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="modal-nav next" id="nextImage">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <img src="pic3.jpeg" alt="" class="modal-image" id="modalImage">
+            <div class="modal-caption" id="modalCaption"></div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My Expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-description">
+                    A comprehensive toolkit for building modern, responsive, and performant web applications.
+                </p>
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Semantic markup, accessibility standards, and modern HTML5 APIs for robust web structures.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3 & Preprocessors</h3>
+                    <p>Advanced styling, Flexbox, Grid, animations, and responsive design for beautiful interfaces.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript ES6+</h3>
+                    <p>Modern JavaScript, DOM manipulation, async programming, and interactive web features.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Creating websites that look and function perfectly on all screen sizes and devices.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Version Control</h3>
+                    <p>Git workflows, collaboration, and efficient project management using modern tools.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Performance Optimization</h3>
+                    <p>Fast loading times, optimized assets, and efficient code for superior user experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Let's Build Something Great</h2>
+                <p class="section-description">
+                    Have a project in mind? I'd love to hear about it. Let's create something amazing together.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-card">
+                    <h3 style="font-size: 2rem; margin-bottom: 20px; color: var(--dark);">
+                        Ready to start your next project?
+                    </h3>
+
+                    <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 30px;">
+                        Whether you need a new website, have an idea to discuss, or just want to connect,
+                        feel free to reach out. I'm always open to new opportunities and collaborations.
+                    </p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:jessekiplangat06@gmail.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            jessekiplangat06@gmail.com
+                        </a>
+                        <a href="tel:+254729863972" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            +254 729 863 972
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://linkedin.com" class="social-link linkedin" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://facebook.com" class="social-link facebook" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/jesse3425417487" class="social-link twitter" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://wa.me/254729863972" class="social-link whatsapp" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/jesse_kiplagat" class="social-link instagram" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">Jesse Kiplangat</div>
+                    <p class="footer-tagline">
+                        Frontend developer creating digital experiences with precision, passion, and purpose.
+                        Specializing in responsive web design and modern JavaScript development.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/jesse3425417487" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/jesse_kiplagat" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:jessekiplangat06@gmail.com"><i class="fas fa-envelope"></i> jessekiplangat06@gmail.com</a></li>
+                        <li><a href="tel:+254729863972"><i class="fas fa-phone"></i> +254 729 863 972</a></li>
+                        <li><a href="https://wa.me/254729863972"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Kenya</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jesse Kiplangat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript in a "js" folder -->
+    <script src="script.js"></script>
+</body>
+</html>
